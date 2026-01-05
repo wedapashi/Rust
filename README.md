@@ -7,14 +7,14 @@
 
 ## Few basic cargo commands:
 - `cargo new <Project_Name>` will create a project named '<Project_Name>'
-- `cargo run` will build and run the project (From target/debug/<Project_Name>
+- `cargo run` will build and run the project (From target/debug/<Project_Name>)
 - `cargo run --release` will build and run the release version of the <Project_Name>, the execution is faster as compated to debug version and compilation process is slower than debug version.
 
 ## Few things to know beforehand:
 - Scope rules with `{` and `}` are similar to C/C++
 - `let` is used to declare a variable
 - `let` statement can destructure the data on RHS and use it to initialize the patterns on the LHS. `let (foo, bar, baz) = {10, 1, 89);` will set the value of `foo` to `10`, `bar` to `1` and `baz` to `89`. It is as good as declaring each of these 3 variables separately.
-- Rust is a strongly type-annotated language, however, you can leave the type-annotation aside if Rust can determine the correct daya type for the variable
+- Rust is a strongly type-annotated language, however, you can leave the type-annotation aside if Rust can determine the correct data-type for the variable
 - All variable by-default are immutable. This is for speed optimization, safety and concurrency.
 - `let mut` syntax is used to override the immutability.
 - `const` provide further immutability within the module, making it global immutable variable in the module.
